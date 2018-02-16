@@ -19,6 +19,28 @@ It's a pre-written code on the blockchain that can execute a bunch of different 
 ### RPC
 --todo
 
+
+### testrpc
+testrpc networkstrpc
+https://github.com/trufflesuite/ganache-cli
+this allows us to spun a virtual blockchain in memory and play with it, without needing to install a real blockchain
+install based on repo readme intructions:
+>npm install -g ganache-cli
+open new terminal and start the testrpc by typing:
+>ganache-cli
+this will run a blockchain on localhost:8545
+to connect to it we'll use web3.js lib
+
+
+### web3.js
+js library that allows us to connect to the blockchain
+https://github.com/ethereum/web3.js/
+use 1.0 version not the developer branch
+add to project with:
+>yarn add web3
+or
+>npm i web3 --save
+
 ## Ethereum Technologies
 
 ### Ethereum Virtual Machine
