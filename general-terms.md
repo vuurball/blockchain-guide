@@ -11,7 +11,8 @@ If-This-Than-That logic program, on to the blockcahin and run by all the compute
 It's a pre-written code on the blockchain that can execute a bunch of different actions.
 
 ### Solidity
---todo
+language for writing smart contracts on the ethereum blockchain.
+online compilers: https://remix.ethereum.org
 
 ### Truffle
 --todo
@@ -19,6 +20,8 @@ It's a pre-written code on the blockchain that can execute a bunch of different 
 ### RPC
 --todo
 
+### Gas
+--todo
 
 ### testrpc
 testrpc networkstrpc
