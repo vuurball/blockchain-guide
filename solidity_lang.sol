@@ -34,3 +34,44 @@ contract HelloWorldContract {
        return "*****************the creator ***************";
    }
 }
+
+
+////////////////////////////////////////////////////
+
+pragma solidity ^0.4.0;
+
+contract CustodialContract {
+    address client;
+    bool public flag = false;
+    
+    function CustodialContract(){
+         client =  msg.sender;
+    }
+    
+    //the passed amount will add the money to the contract balance
+    function depositFunds() payable{
+        
+    }
+    
+    //getter funcs will hve the word "constant", setters won't.
+    function getFunds() ifClient constant returns(uint){
+        //"this" refers to current contract object
+        return this.balance;
+    }
+    
+    function withdrawFunds(uint amount) ifClient {
+        //adds amount to clients' account balance
+        if(client.send(amount)){
+            flag = true;
+        }else{
+            flag = false;
+        }
+    }
+    
+    modifier ifClient(){
+        if(msg.sender != client){
+            throw;
+        }
+        _;
+    }
+}
