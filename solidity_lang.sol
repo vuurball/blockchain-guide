@@ -44,13 +44,17 @@ contract CustodialContract {
     address client;
     bool public flag = false;
     
+    //events are like a loggin function, here we declare the event name and params it will log. 
+    //events can be used only in setters, not getters
+    event UserStatusEvent(string _msg, address user, uint amount);
+    
     function CustodialContract(){
          client =  msg.sender;
     }
-    
-    //the passed amount will add the money to the contract balance
+
     function depositFunds() payable{
-        
+        //calling an event to log this action
+        UserStatusEvent("new deposit", msg.sender, msg.value);
     }
     
     //getter funcs will hve the word "constant", setters won't.
