@@ -60,8 +60,11 @@ or
 
 
 ### metamask
-https://github.com/MetaMask/metamask-extension/releases
-download the relevant zip for chrome, go to chrome extensions, enter development mode, click on Load unpacked extentsions, select the downloaded plugin. the fox icon should appear in chrome bar, and we can disable the Developer mode.
+It allows you to run Ethereum dApps right in your browser without running a full Ethereum node.
+you can create accounts (wallets) and use this wallet on ethereum blockchain or local rpc blockchain, etc
+install the metamask on chrome to use it.
+to use a wallet account, start testrpc, and import one of the 10 demo accounts into metamask- copy the private key of one of the accounts, click on import account in metamask and paste it.
+
 
 
 ## Ethereum Technologies
