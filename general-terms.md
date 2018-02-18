@@ -12,10 +12,14 @@ It's a pre-written code on the blockchain that can execute a bunch of different 
 
 ### Solidity
 language for writing smart contracts on the ethereum blockchain.
+the smart contracts are written in solidity and need to be complied into bytecode. then we upload the contract to the blockchain and wait for it to be mined. once it's mined, we can interact with via http-post requests / interface.
 online compilers: https://remix.ethereum.org
+Truffle is a framework for working with smart contracts and has a built in compiler. 
 
 ### Truffle
---todo
+Tool set Framework for working with smart contracts. it has tools that allow: compile and build, testing, deployment, and interaction with the SC.
+to install
+```npm i -g truffle```
 
 ### RPC
 --todo
@@ -43,6 +47,12 @@ add to project with:
 >yarn add web3
 or
 >npm i web3 --save
+
+
+### metamask
+https://github.com/MetaMask/metamask-extension/releases
+download the relevant zip for chrome, go to chrome extensions, enter development mode, click on Load unpacked extentsions, select the downloaded plugin. the fox icon should appear in chrome bar, and we can disable the Developer mode.
+
 
 ## Ethereum Technologies
 
