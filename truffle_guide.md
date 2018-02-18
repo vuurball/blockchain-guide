@@ -103,6 +103,10 @@ To interact with deployed contract we can use truffle console, to enter into con
 
 ```truffle console```
 
+to console to a production blockchain instead the development, pass the network param based on truffle.js settings:
+
+```truffle console --network production```
+
 then we'll use js to interact with the contract
 
 >var hw;
@@ -111,6 +115,8 @@ then we'll use js to interact with the contract
 
 >hw.sayHello.call(); //sayHello is a function in our contract. getters are called by adding ".call()", setters called like normal func();
 
+to get a deployed contract id/address/hash: (from inside the console)
+`ContractNameContract.deployed();` will output json, at the bottom there is the address: `address: '0x8ddbe991c6d2787841248232d494b9846fd44b2c',`
 
 
 
