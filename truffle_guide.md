@@ -43,6 +43,10 @@ to start a new proj with rtuffle
 
 ```truffle init```
 
+to init a project with webpack structure we can use truffle boxes https://lm.tpondemand.com/entity/1985-lead-splitter-algorithm
+
+```truffle unbox webpack```
+
 ## workflow 
 
 new contracts should be in .sol files in dir "contracts"
@@ -117,7 +121,6 @@ then we'll use js to interact with the contract
 
 to get a deployed contract id/address/hash: (from inside the console)
 `ContractNameContract.deployed();` will output json, at the bottom there is the address: `address: '0x8ddbe991c6d2787841248232d494b9846fd44b2c',`
-
 
 
 
