@@ -27,6 +27,16 @@ to install
 ### Gas
 --todo
 
+### geth
+JS console that enables us to send commands directly to the blockchain
+
+> ssh -p 3000 someblockchainhostname.cloudapp.zure.com
+> geth attach
+
+for example - unlocking default account to allow deployment of a smart contract:
+
+> personal.unlockAccount(eth.coinbase)
+
 ### testrpc
 testrpc networkstrpc
 https://github.com/trufflesuite/ganache-cli
