@@ -31,13 +31,19 @@ See more at http://truffleframework.com/docs
 Truffle is a tool set fFramework for working with smart contracts. 
 it has tools that allow: compile and build, testing, deployment, and interaction with the SC.
 
+## installation
+
 to install
 
 ```npm i -g truffle```
 
+## project set up
+
 to start a new proj with rtuffle
 
 ```truffle init```
+
+## workflow 
 
 new contracts should be in .sol files in dir "contracts"
 
@@ -64,9 +70,13 @@ module.exports = {
 };
 ```
 
+## compilation 
+
 then we can compile:
 
 ``` truffle compile```
+
+## deployement to blockchain
 
 this creates a build in "build/contracts" dir. 
 
@@ -83,6 +93,12 @@ Saving successful migration to network...
 Saving artifacts...
 ```
 
+To deploy to real blockchain:
+open truffle.js and create second locatin called "production" instead "development"
+then run `truffle complie` again and then migrate with network-location as param `truffle migrate --network production`
+
+## console interaction with contract
+
 To interact with deployed contract we can use truffle console, to enter into console mode:
 
 ```truffle console```
@@ -93,6 +109,9 @@ then we'll use js to interact with the contract
 
 >HelloWorldContract.deployed().then( function(deployed) { hw = deployed; });
 
->hw.sayHello.call(); //sayHello is a function in our contract
+>hw.sayHello.call(); //sayHello is a function in our contract. getters are called by adding ".call()", setters called like normal func();
+
+
+
 
 
