@@ -74,6 +74,8 @@ add to project with:
 or
 > npm i web3 --save
 
+### ABI
+Application Binary Interface
 
 ### metamask
 It allows you to run Ethereum dApps right in your browser without running a full Ethereum node.
