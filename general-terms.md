@@ -21,6 +21,18 @@ Tool set Framework for working with smart contracts. it has tools that allow: co
 to install
 ```npm i -g truffle```
 
+### Embark 
+Framework for making smart ocntracts like Truffle
+--todo
+
+### Meteor
+General webapp framework. used with web3js
+--todo
+
+## BlockApps.net
+Restful api for DApps based on Haskeel node, they run as a centralized service to save you the trouble of running a local Etherum node.
+--todo
+
 ### RPC
 --todo
 
@@ -50,13 +62,17 @@ to connect to it we'll use web3.js lib
 
 
 ### web3.js
-js library that allows us to connect to the blockchain
+js library that allows us to connect to the blockchain and interact with a smart contracts
+
 https://github.com/ethereum/web3.js/
+
 use 1.0 version not the developer branch
+
 add to project with:
->yarn add web3
+
+> yarn add web3
 or
->npm i web3 --save
+> npm i web3 --save
 
 
 ### metamask
@@ -65,9 +81,23 @@ you can create accounts (wallets) and use this wallet on ethereum blockchain or 
 install the metamask on chrome to use it.
 to use a wallet account, start testrpc, and import one of the 10 demo accounts into metamask- copy the private key of one of the accounts, click on import account in metamask and paste it.
 
+## Hyperledger
+--todo
 
+### Microsoft Coco Framework
+--todo
+
+### R3 Corda Blockchain
+--todo
+
+### JP Morgan Quorum: Enterprise Ethereum
+--todo
+
+### Guardtime and Stratumn
+--todo
 
 ## Ethereum Technologies
+--todo
 
 ### Ethereum Virtual Machine
 
